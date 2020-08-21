@@ -31,7 +31,7 @@ services:
 ### Confirguration
 
 * Adjust the gateway.yaml file to your needs.
-* Create new device specific files containing register information. 
+* Create new device specific files containing register information.
 
 ## Built With
 
@@ -41,12 +41,6 @@ services:
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 

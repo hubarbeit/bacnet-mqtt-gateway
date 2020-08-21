@@ -1,0 +1,120 @@
+properties:
+  - name:                Temperature outside air
+    id:                  temperature_outside_air
+    component:           sensor
+    device_class:        temperature
+    register:            R(1)'TOa
+    unit_of_measurement: °C
+
+  - name:                Temperature exhaut air
+    id:                  temperature_exhaust_air
+    component:           sensor
+    device_class:        temperature
+    register:            R(1)'TEh
+    unit_of_measurement: °C
+
+  - name:                Temperature supply air
+    id:                  temperature_supply_air
+    component:           sensor
+    device_class:        temperature
+    register:            R(1)'TSu
+    unit_of_measurement: °C
+
+  - name:                Temperature extracted air
+    id:                  temperature_extracted_air
+    component:           sensor
+    device_class:        temperature
+    register:            R(1)'TEx
+    unit_of_measurement: °C
+
+
+  - name:                Speed heat exchanger
+    id:                  speed_heat_exchanger
+    component:           sensor
+    register:            R(1)'RotHExgSpd
+    unit_of_measurement: "%"
+
+  - name:                Efficiency heat exchanger
+    id:                  efficiency_heat_exchanger
+    component:           sensor
+    register:            R(1)'HVAC'Erc'PrHExgEfcy
+    unit_of_measurement: "%"
+
+
+  - name:                Heating coil position
+    id:                  heating_coil_position
+    component:           sensor
+    register:            R(1)'HVAC'HclPos
+    unit_of_measurement: "%"
+
+  - name:                Heating coil power
+    id:                  heating_coil_power
+    component:           sensor
+    register:            R(1)'HVAC'Hcl'HclElPwr
+    unit_of_measurement: kW
+
+
+  - name:                Heating coil state
+    id:                  heating_coil_state
+    component:           binary_sensor
+    register:            R(1)'HVAC'HclSta
+    unit_of_measurement: boolean
+
+
+  - name:                Cooker hood active
+    id:                  cooker_hood_active
+    component:           binary_sensor
+    register:            R(1)'RHvacCoo'FhVntOp'FhVnt
+    unit_of_measurement: boolean
+
+
+  - name:                Away mode
+    id:                  away_mode
+    component:           switch
+    register:            R(1)'Away
+    unit_of_measurement: boolean
+    writable:            true
+
+
+  - name:                High mode
+    id:                  high_mode
+    component:           switch
+    register:            R(1)'High
+    unit_of_measurement: boolean
+    writable:            true
+
+  - name:                Heating coil available
+    id:                  heating_coil_available
+    component:           switch
+    register:            R(1)'HVAC'Hcl'EnHclEl
+    unit_of_measurement: boolean
+    writable:            true
+
+  - name:                Setpoint temperature away
+    id:                  setpoint_temperature_away
+    component:           switch
+    register:            R(1)'RHvacCoo'TCtlH'SpTAway
+    unit_of_measurement: °C
+    writable:            true
+
+  - name:                Setpoint temperature home
+    id:                  setpoint_temperature_home
+    component:           switch
+    register:            R(1)'RHvacCoo'TCtlH'SpTHome
+    unit_of_measurement: °C
+    writable:            true
+
+
+  - name:                Room temperature
+    id:                  room_temperature
+    component:           switch
+    register:            R(1)'ROpUnDev'TR
+    unit_of_measurement: °C
+    writable:            true
+
+  - name:                Room temperature setpoint free cooling
+    id:                  room_temperature_setpoint_free_cooling
+    component:           switch
+    register:            R(1)'RHvacCoo'TCtlH'SpTRFreeC
+    unit_of_measurement: °C
+    writable:            true

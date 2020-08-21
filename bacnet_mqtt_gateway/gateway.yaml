@@ -1,0 +1,11 @@
+mqtt:
+  host:     mqtt.example.com
+  username: mqtt_username
+  password: mqtt_password
+
+devices:
+  - id:             nordic-s4
+    name:           Nordic S4
+    profile:        !include nordic-s4-no.yaml
+    address:        192.168.1.123
+    bacnet_device:  1
